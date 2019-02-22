@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="ModeloEditDlg" widgetVar="ModeloEditDialog" modal="true" resizable="false" appendTo="@(body)" header="#{bundle.EditModeloTitle}">
+            <h:form id="ModeloEditForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{modeloController.selected != null}">
+                        <p:outputLabel value="#{bundle.EditModeloLabel_imagemURL}" for="imagemURL" />
+                        <p:inputText id="imagemURL" value="#{modeloController.selected.imagemURL}" title="#{bundle.EditModeloTitle_imagemURL}" />
+                        <p:outputLabel value="#{bundle.EditModeloLabel_nome}" for="nome" />
+                        <p:inputText id="nome" value="#{modeloController.selected.nome}" title="#{bundle.EditModeloTitle_nome}" />
+                        <p:outputLabel value="#{bundle.EditModeloLabel_tela}" for="tela" />
+                        <p:inputText id="tela" value="#{modeloController.selected.tela}" title="#{bundle.EditModeloTitle_tela}" />
+                        <p:outputLabel value="#{bundle.EditModeloLabel_flash}" for="flash" />
+                        <p:inputText id="flash" value="#{modeloController.selected.flash}" title="#{bundle.EditModeloTitle_flash}" />
+                        <p:outputLabel value="#{bundle.EditModeloLabel_fabricante}" for="fabricante" />
+                        <p:selectOneMenu id="fabricante" value="#{modeloController.selected.fabricante}" >
+                            <f:selectItem itemLabel="#{bundle.SelectOneMessage}"/>
+                            <f:selectItems value="#{fabricanteController.itemsAvailableSelectOne}"
+                                           var="fabricanteItem"
+                                           itemValue="#{fabricanteItem}"/>
+                        </p:selectOneMenu>
+                        <p:outputLabel value="#{bundle.EditModeloLabel_funcionalidade}" for="funcionalidade" />
+                        <p:selectOneMenu id="funcionalidade" value="#{modeloController.selected.funcionalidade}" required="true" requiredMessage="#{bundle.EditModeloRequiredMessage_funcionalidade}">
+                            <f:selectItem itemLabel="#{bundle.SelectOneMessage}"/>
+                            <f:selectItems value="#{funcionalidadeController.itemsAvailableSelectOne}"
+                                           var="funcionalidadeItem"
+                                           itemValue="#{funcionalidadeItem}"/>
+                        </p:selectOneMenu>
+                        <p:outputLabel value="#{bundle.EditModeloLabel_id}" for="id" />
+                        <p:inputText id="id" value="#{modeloController.selected.id}" title="#{bundle.EditModeloTitle_id}" />
+                    </p:panelGrid>
+                    <p:commandButton actionListener="#{modeloController.update}" value="#{bundle.Save}" update="display,:ModeloListForm:datalist,:growl" oncomplete="handleSubmit(args, 'ModeloEditDialog');"/>
+                    <p:commandButton value="#{bundle.Cancel}" onclick="ModeloEditDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

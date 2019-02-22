@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="ModeloViewDlg" widgetVar="ModeloViewDialog" modal="true" resizable="false" appendTo="@(body)" header="#{bundle.ViewModeloTitle}">
+            <h:form id="ModeloViewForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{modeloController.selected != null}">
+                        <h:outputText value="#{bundle.ViewModeloLabel_imagemURL}"/>
+                        <h:outputText value="#{modeloController.selected.imagemURL}" title="#{bundle.ViewModeloTitle_imagemURL}"/>
+                        <h:outputText value="#{bundle.ViewModeloLabel_nome}"/>
+                        <h:outputText value="#{modeloController.selected.nome}" title="#{bundle.ViewModeloTitle_nome}"/>
+                        <h:outputText value="#{bundle.ViewModeloLabel_tela}"/>
+                        <h:outputText value="#{modeloController.selected.tela}" title="#{bundle.ViewModeloTitle_tela}"/>
+                        <h:outputText value="#{bundle.ViewModeloLabel_flash}"/>
+                        <h:outputText value="#{modeloController.selected.flash}" title="#{bundle.ViewModeloTitle_flash}"/>
+                        <h:outputText value="#{bundle.ViewModeloLabel_fabricante}"/>
+                        <h:outputText value="#{modeloController.selected.fabricante}" title="#{bundle.ViewModeloTitle_fabricante}"/>
+                        <h:outputText value="#{bundle.ViewModeloLabel_funcionalidade}"/>
+                        <h:outputText value="#{modeloController.selected.funcionalidade}" title="#{bundle.ViewModeloTitle_funcionalidade}"/>
+                        <h:outputText value="#{bundle.ViewModeloLabel_id}"/>
+                        <h:outputText value="#{modeloController.selected.id}" title="#{bundle.ViewModeloTitle_id}"/>
+                    </p:panelGrid>
+                    <p:commandButton value="#{bundle.Close}" onclick="ModeloViewDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

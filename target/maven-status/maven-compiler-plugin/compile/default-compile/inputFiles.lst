@@ -1,0 +1,17 @@
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\controler\FuncionalidadeFacade.java
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\entity\Funcionalidade.java
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\entity\Fabricante.java
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\controler\exceptions\NonexistentEntityException.java
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\controler\AbstractFacade.java
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\controler\ModeloFacade.java
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\controler\util\JsfUtil.java
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\controler\FabricanteController.java
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\controler\FabricanteFacade.java
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\controler\FabricanteJpaController.java
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\controler\FuncionalidadeController.java
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\controler\exceptions\IllegalOrphanException.java
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\controler\exceptions\RollbackFailureException.java
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\controler\util\PaginationHelper.java
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\controler\ModeloController.java
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\entity\Modelo.java
+C:\Users\Michele\Documents\NetBeansProjects\DesafioWeb\src\main\java\com\desafio\desafioweb\controler\exceptions\PreexistingEntityException.java

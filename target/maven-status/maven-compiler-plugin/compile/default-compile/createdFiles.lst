@@ -1,0 +1,13 @@
+com\desafio\desafioweb\controler\FabricanteJpaController.class
+com\desafio\desafioweb\entity\Fabricante_.class
+com\desafio\desafioweb\controler\exceptions\RollbackFailureException.class
+com\desafio\desafioweb\controler\exceptions\NonexistentEntityException.class
+com\desafio\desafioweb\controler\FabricanteController.class
+com\desafio\desafioweb\controler\FabricanteController$FabricanteControllerConverter.class
+com\desafio\desafioweb\entity\Fabricante.class
+com\desafio\desafioweb\controler\FabricanteFacade.class
+com\desafio\desafioweb\controler\exceptions\IllegalOrphanException.class
+com\desafio\desafioweb\controler\exceptions\PreexistingEntityException.class
+com\desafio\desafioweb\controler\util\JsfUtil$PersistAction.class
+com\desafio\desafioweb\controler\util\JsfUtil.class
+com\desafio\desafioweb\controler\AbstractFacade.class
